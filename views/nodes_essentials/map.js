@@ -3,7 +3,7 @@ function(doc) {
     var updatetime = new Date(doc.lastupdate)
     var timediff = time.getTime() - updatetime.getTime()
     
-    if (doc.type=='node' && doc.longitude && doc.latitude && timediff <= 86400000) {
+    if (doc.type=='node' && doc.longitude && doc.latitude && timediff <= 8640000) {
         var antennas = [];
         if (doc.interfaces) {
             for (var i=0; i<doc.interfaces.length; i++) {
